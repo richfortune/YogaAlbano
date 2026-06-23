@@ -82,6 +82,7 @@ Email previste nell'MVP:
 - `AdminUser`
 - `Course`
 - `Teacher`
+- `RecurringClassSchedule`
 - `YogaClass`
 - `Booking`
 - `RefreshToken`

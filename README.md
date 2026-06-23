@@ -13,12 +13,12 @@ YogaAlbano è una piattaforma web per la gestione di una scuola di yoga, con are
 - Versionamento: GitHub
 
 ## Documentazione
-La specifica iniziale del progetto è disponibile in [docs/SPEC.md](C:\Users\Christian AGRESTA\Documents\YogaAlbano\docs\SPEC.md).
+La specifica iniziale del progetto è disponibile in [Specifica MVP](docs/SPEC.md).
 
 ## Roadmap Iniziale
 1. Definizione della struttura iniziale del repository.
-2. Creazione della solution backend .NET 8 secondo Clean Architecture.
-3. Modellazione delle entità e configurazione della persistenza PostgreSQL con Entity Framework Core.
-4. Avvio del frontend applicativo in React + TypeScript.
-5. Realizzazione della landing page pubblica.
-6. Introduzione della containerizzazione Docker e della configurazione di sviluppo.
+2. Configurazione Docker, PostgreSQL e ambiente locale.
+3. Creazione della solution backend .NET 8 secondo Clean Architecture.
+4. Modellazione delle entità e configurazione della persistenza PostgreSQL con Entity Framework Core.
+5. Avvio del frontend applicativo in React + TypeScript.
+6. Realizzazione della landing page pubblica.
