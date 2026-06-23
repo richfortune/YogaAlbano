@@ -22,3 +22,28 @@ La specifica iniziale del progetto è disponibile in [Specifica MVP](docs/SPEC.m
 4. Modellazione delle entità e configurazione della persistenza PostgreSQL con Entity Framework Core.
 5. Avvio del frontend applicativo in React + TypeScript.
 6. Realizzazione della landing page pubblica.
+
+## Avvio Ambiente Locale
+Creare il file `.env` partendo dall'esempio:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Avviare PostgreSQL:
+
+```powershell
+docker compose up -d postgres
+```
+
+Avviare pgAdmin:
+
+```powershell
+docker compose up -d pgadmin
+```
+
+Arrestare i container:
+
+```powershell
+docker compose down
+```
