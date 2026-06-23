@@ -84,3 +84,19 @@ Endpoint di test:
 ```text
 GET /health
 ```
+
+### EF Core e PostgreSQL
+Ripristinare i pacchetti:
+
+```powershell
+cd backend
+dotnet restore
+```
+
+Compilare dopo modifiche alla configurazione EF Core:
+
+```powershell
+dotnet build
+```
+
+Le migration non sono ancora state create.
