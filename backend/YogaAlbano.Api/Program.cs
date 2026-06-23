@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
@@ -39,5 +40,7 @@ app.MapGet("/health/db", async (YogaAlbanoDbContext dbContext) =>
 })
 .WithName("DatabaseHealth")
 .WithOpenApi();
+
+app.MapControllers();
 
 app.Run();
