@@ -47,3 +47,40 @@ Arrestare i container:
 ```powershell
 docker compose down
 ```
+
+## Backend .NET
+La solution backend si trova nella cartella `backend` ed e organizzata secondo Clean Architecture:
+
+```text
+backend/
+|-- YogaAlbano.sln
+|-- YogaAlbano.Api/
+|-- YogaAlbano.Application/
+|-- YogaAlbano.Domain/
+`-- YogaAlbano.Infrastructure/
+```
+
+Ripristinare i pacchetti:
+
+```powershell
+cd backend
+dotnet restore
+```
+
+Compilare la solution:
+
+```powershell
+dotnet build
+```
+
+Avviare l'API:
+
+```powershell
+dotnet run --project YogaAlbano.Api
+```
+
+Endpoint di test:
+
+```text
+GET /health
+```
